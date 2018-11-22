@@ -29,7 +29,7 @@ public class FaceDetect2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_face_detect2);
 
-        Button btn = (Button) findViewById(R.id.button);
+        Button btn = findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,7 +37,7 @@ public class FaceDetect2Activity extends AppCompatActivity {
             }
         });
 
-        ImageView myImageView = (ImageView) findViewById(R.id.imgview);
+        ImageView myImageView = findViewById(R.id.imgview);
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inMutable=true;
         Bitmap myBitmap = BitmapFactory.decodeResource(

@@ -59,8 +59,8 @@ public class FaceDetect3Activity extends AppCompatActivity {
         super.onCreate(icicle);
         setContentView(R.layout.activity_face_detect3);
 
-        mPreview = (CameraSourcePreview) findViewById(R.id.preview);
-        mGraphicOverlay = (GraphicOverlay) findViewById(R.id.faceOverlay);
+        mPreview = findViewById(R.id.preview);
+        mGraphicOverlay = findViewById(R.id.faceOverlay);
 
         // Check for the camera permission before accessing the camera.  If the
         // permission is not granted yet, request permission.
